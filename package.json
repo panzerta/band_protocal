@@ -1,0 +1,19 @@
+{
+  "name": "band_protocal",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "problem1": "node src/problem_1.js",
+    "problem2": "node src/problem_2.js",
+    "problem3": "node src/problem_3.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,35 @@
+this module used to get status of transaction
+you need to call this method by call api.
+
+API specification
+  Method: GET
+  End point: /tx/status
+  Type body: {
+    symbol: string,
+    price:  number,
+    timestamp: number
+  }
+  Example body: {
+    "symbol": "ETH",
+    "price":  4500,
+    "timestamp": 1678912343
+  }
+
+  //Status 200
+  Type response: {
+    "status": "CONFIRMED" | "FAILED" | "PENDING" | "DNE"
+  }
+  Example response: {
+    "status": "CONFIRMED"
+  }
+
+  //Status 400
+  When you send body that invalid format or the error occur this reponse is error message.
+  Type response: {
+    "message": string;
+  }
+  Example reponse {
+    message: 'This is Error message'
+  }
+
+
